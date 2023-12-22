@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>test mdp</title>
+    </head>
+    <body>
+        <h1>ENTRER LE MOT DE PASSE </h1>
+        <form method="post">
+            {% csrf_token %}                        <!-- ne pas l'oublier pour les requete de type post-->
+            <input type="text" name="mdp_input">    <!-- toujours mettres type et les name-->
+            <input type="submit" value="Envoyer">   <!-- Envoyer c'est submit ,value-->
+        </form>
+    </body>
+
+
+
+</html>
