@@ -1,10 +1,12 @@
-<!DOCTYPE html>
+{% load static %}
 <html>
     <head>
-        <title>  test   </title>
+        <title><img src="{% static 'logo/CKHN.jpg' %} " alt='CKHN'>  Accueil CKHN  </title>
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}"/>
 
     </head>
     <body>
-        <h1>yes</h1>    
-    </body>
+        <h1>abracadabra</h1>    
+    </body> 
+    <p> <a href= "{% url 'annuaire' %}">page mot de passes </a> </p>
 </html>

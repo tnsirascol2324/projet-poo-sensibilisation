@@ -41,4 +41,4 @@ def mdppage_render(request):
         else:
             page=render(request,"mdp.html")
             return page
-
+        
