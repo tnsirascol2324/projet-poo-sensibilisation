@@ -24,7 +24,7 @@ urlpatterns = [
     path('',homepage_render,name=" '' " ),
     path('random/',randompage_render,name="random"),
     path('annuaire/',annuairepage_render,name="annuaire"),
-    path('access/',accesspage_render,name="access"),
+    path('access/',accesspage_render,name="acces"),
     re_path(r'^bio/(?P<username>\w+)/$',biopage_render,name="bio"),#pour mettre des url personnalisé
     path("mdp/",mdppage_render, name= "mdp"),
 

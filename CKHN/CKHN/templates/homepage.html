@@ -1,12 +1,15 @@
 {% load static %}
 <html>
     <head>
-        <title>  Accueil CKHN  </title>
-        <link rel="stylesheet" href="{% static 'css/styles.css' %}"/>
-
+        <title>Accueil CKHN</title>
+        <link rel="stylesheet" href="{% static './../static/css/styles.css'  %}"/>
     </head>
     <body>
-        <h1>abracadabra</h1>    
-    </body> 
-    <p> <a href= "{% url 'mdp' %}">page mot de passes </a> </p>
+        {% block content %}
+            <h1>Voici notre collection</h1>  
+            <img src="{% static "\CKHN\static\logo\CKHN.png" %}">
+        {% endblock %}
+        
+        <p><a href="{% url 'mdp' %}">Page mot de passe</a></p>
+    </body>
 </html>
