@@ -1,8 +1,14 @@
-{% load static %}
+{% load static %} <!-- SM : tu n'as pas besoin de ça en HTML pur. Mais si tu es dans Django, oui tu peux en avoir besoin, mais je ne maîtrise pas -->
 <html>
     <head>
+<<<<<<< HEAD
         <title>Accueil CKHN</title>
         <link rel="stylesheet" href="{% static './../static/css/styles.css'  %}"/>
+=======
+        <title>  Accueil CKHN  </title>
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}"/> <!-- SM : ici tu fais juste un href, et tu donnes le chemin relatif de ton fichier css. En html pur ça donnerai href='./../static/css/styles.css' par exemple. Le "." permet de dire je suis dans le dossier en cours (ici templates). Le ".." permet de dire je remonte dans le dossier parent (donc ici CKHN) -->
+
+>>>>>>> 533f74fa2c4ece34da39543ff39783c889a533c3
     </head>
     <body>
         {% block content %}
